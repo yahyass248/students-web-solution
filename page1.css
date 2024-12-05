@@ -1,0 +1,54 @@
+       /* hizi ni code za kwenye page one ambazo zinahusu image slide show*/
+        .parent {
+            height: 300px;
+            width: 600px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .element {
+            float: left;
+            height: 100px;
+            width: 716px;
+        }
+        .slides {
+            width: calc(716px * 5);
+            animation: slideShow 10s ease infinite;
+        }
+        img {
+        max-height: 700px;
+        max-width: 2000px;
+        
+        }
+        @keyframes slideShow {
+            20% {
+                margin-left: 0px;
+            }
+            40% {
+                margin-left: calc(-716px * 1);
+            }
+            60% {
+                margin-left: calc(-716px * 2);
+            }
+            80% {
+                margin-left: calc(-716px * 3);
+            }
+                90% {
+                margin-left: calc(-716px * 4);
+            }
+        }
+        /*zimeisha hapa*/
+
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style >
+        /* General Styling */
+
+
+/* Header Styling */
+.header {
+     background-color: #003366;
+    color: #ffffff;
+}
+
+.header-top {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 110px;
+    height: 110px;
+    border-radius:60px ;
+    object-fit: cover;
+    display: block;
+}
+
+.header-top .logo-text {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-left: 10px;
+}
+
+/* Header Content */
+.header-content {
+    padding: 1rem 0;
+}
+
+.online-business {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+.online-business i {
+    margin-right: 10px;
+}
+
+.nav .nav-link {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.nav .dropdown-menu a {
+    color: #343a40;
+    font-size: 1rem;
+}
+
+.nav-item .nav-link, .dropdown-item {
+    transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover, .dropdown-item:hover {
+    color: #ffc107;
+}
+
+/* Footer Styling */
+.footer {
+    background-image: url('images (23).jpeg');
+    background-color: rgba(0, 128, 0, 0.9);
+    background-blend-mode: overlay;
+    padding: 2rem 1rem;
+    margin-top: auto;
+}
+
+.footer h5 {
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer a {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFFFFF;
+}
+
+.footer hr {
+    border-top: 1px solid #444;
+}
+
+footer .row div {
+    margin-bottom: 1.5rem;
+}
+
+.footer .social-media a {
+    font-size: 20px
+}
+
+footer .social-media a i {
+    margin-right: 8px;
+
+/* Copyright Styling */
+footer p.copyright { 
+
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    color: #; /* Unique color for the copyright text */
+    text-align: center;
+    border-top: 1px solid #444;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet"  href="page2.css">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo-container">
+                <img src=" WhatsApp Image 2024-09-12 at 02.45.45_b32c0e1f.jpg " alt="Logo" class="logo-img">
+                <h1 class="logo-text">Mobile Phone Shop</h1>
+            </div>
+        </div>
+        <div class="header-content container d-flex justify-content-between align-items-center">
+            <div class="online-business d-flex align-items-center"><h4>Online Business</h4>&nbsp;
+                <i  style="color:yellow;" class="fas fa-globe fa-2x"></i>
+                
+            </div>
+            <nav class="d-flex align-items-center">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i style="color:limegreen;" class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="About.html"><i style="color:limegreen;"  class="fas fa-info-circle"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=""><i style="color:limegreen;"  class="fas fa-box"></i> Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="Contact.html" id="contactDropdown" role="button" data-toggle="dropdown">
+                            <i style="color:limegreen;" class="fas fa-envelope"></i> Contact Us
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="contact.html"><i style="color:red;" class="fas fa-info"></i> Contact Information</a>
+                            <a class="dropdown-item" href="contact.html"><i style="color:red;" class="fas fa-qrcode"></i> Scan QR Code</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+
+
+
+        <center>
+    <h1 style="color: green; font-size: 18px">Please Click on brand name to quickly navigate<br> to the corresponding phone table below</h1>
+</center>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#samsung" title="View Samsung Phones Table"><i class="fas fa-mobile-alt"></i> Samsung</a>
+        <a href="#tecno" title="Discover Tecno Phones Table"><i class="fas fa-mobile"></i> Tecno</a>
+        <a href="#iphone" title="Explore iPhone Phones Table"><i class="fas fa-mobile-alt"></i> iPhone</a>
+        <a href="#huawei" title="Check Huawei Phones Table"><i class="fas fa-mobile"></i> Huawei</a>
+    </div>
+
+    <!-- Samsung Section -->
+    <h2 class="section-title" id="samsung">Samsung Phones</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Samsung Galaxy S23</td>
+                    <td>TZS 3,825,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.25.22_403901de.jpg" alt="Samsung Galaxy S23"></td>
+                </tr>
+                <tr>
+                    <td>Samsung Galaxy A14</td>
+                    <td>TZS 370,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.26.39_6f306f13.jpg" alt="Samsung Galaxy A14"></td>
+                </tr>
+
+                <tr>
+                    <td>Samsung Galaxy S10 age</td>
+                    <td>TZS 700,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.32.11_4f8e530c.jpg" alt="Samsung Galaxy A14"></td>
+                </tr>
+
+
+                 <tr>
+                    <td>Samsung Galaxy Note 20 Ultra</td>
+                    <td>TZS 2,500,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.37.12_8bec98f2.jpg" alt="Samsung Galaxy A14"></td>
+                </tr>
+
+
+                <tr>
+                    <td>Samsung Galaxy Hot 10</td>
+                    <td>TZS 250,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.42.37_77ab71fa.jpg" alt="Samsung Galaxy A14"></td>
+                </tr>
+
+
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Tecno Section -->
+    <h2 class="section-title" id="tecno">Tecno Phones</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tecno Phantom X</td>
+                    <td>TZS 635,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.04.05_4a30f890.jpg" alt="Tecno Phantom X"></td>
+                </tr>
+                <tr>
+                    <td>Tecno Spark 10</td>
+                    <td>TZS 354,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.04.57_a6118225.jpg" alt="Tecno Spark 10"></td>
+                </tr>
+
+                 <tr>
+                    <td>Tecno Spark 20 pro+</td>
+                    <td>TZS 720,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.14.04_2d90a2bf.jpg" alt="Tecno Spark 10"></td>
+
+                     <tr>
+                    <td>Tecno LB7</td>
+                    <td>TZS 450,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.17.24_1d8559ac.jpg" alt="Tecno Spark 10"></td>
+                </tr>
+
+                 <tr>
+                    <td>Tecno Camon 20 Pro</td>
+                    <td>TZS 900000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.21.03_833673f4.jpg" alt="Tecno Spark 10"></td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- iPhone Section -->
+    <h2 class="section-title" id="iphone">iPhone Phones</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                 <tr>
+                    <td>iPhone SE</td>
+                    <td>TZS 1,350,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 02.06.33_03eda2b1.jpg" alt="iPhone SE"></td>
+                </tr>
+
+                
+                <tr>
+                    <td>iPhone SE</td>
+                    <td>TZS 1,350,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 02.06.32_d5b370b5.jpg" alt="iPhone SE"></td>
+                </tr>
+
+                 <tr>
+                    <td>iPhone 13 Pro</td>
+                    <td>TZS 3,800,00 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.59.29_da0fb61d.jpg" alt="iPhone SE"></td>
+                </tr>
+
+                <tr>
+                    <td>iPhone 14 Pro Max</td>
+                    <td>TZS 3,008,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 01.59.38_ad63f897.jpg" alt="iPhone SE"></td>
+                </tr>
+
+                 <tr>
+                    <td>iPhone 15 Pro </td>
+                    <td>TZS 2,600,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 02.11.04_997f4bbf.jpg" alt="iPhone SE"></td
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Huawei Section -->
+    <h2 class="section-title" id="huawei">Huawei Phones</h2>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Phone Name</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Huawei P60 Pro</td>
+                    <td>TZS 1,836,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 11.34.44_5270be4a.jpg" alt="Huawei P60 Pro"></td>
+                </tr>
+                <tr>
+                    <td>Huawei Nova 10</td>
+                    <td>TZS 1,144,000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 11.34.45_0b7aaa18.jpg" alt="Huawei Nova 10"></td>
+                </tr>
+                 <tr>
+                    <td>Huawei p50 pro</td>
+                    <td>TZS 1,907,100</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 11.42.41_185be151.jpg" alt="Huawei Nova 10"></td>
+                </tr>
+
+                 <tr>
+                    <td>Huawei nova</td>
+                    <td>TZS 1,144,000 </td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 11.42.42_9fbc4815.jpg" alt="Huawei Nova 10"></td>
+                </tr>
+                <tr>
+                    <td>Huawei Pura 70 Pro</td>
+                    <td>TZS 1000000</td>
+                    <td><img src="WhatsApp Image 2024-12-03 at 11.48.52_9143fe8a.jpg" alt="Huawei Nova 10"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+               <!-- Sitemap Section -->
+                <div class="col-md-4">
+                    <h5>Get In Touch</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="tel:+255772367656"><i class="fas fa-phone"></i> +255772367656</a></li>
+                        <li><a href="mailto:yahyaseif09@gmail.com"><i class="fas fa-envelope"></i>&nbsp; yahyaseif09@gmail.com</a></li>
+                        <li><a href="#"></a></li>
+                        <li><a href="tel:+255620540508"><i class="fas fa-phone"></i> +255620540508</a></li>
+                         <li><a href="mailto:khamiszawjjah@gmail.com"><i class="fas fa-envelope"></i>&nbsp; khamiszawjjah@gmail.com</a></li>
+                         <li><a href="tel:+255658973099"><i class="fas fa-phone"></i> +255658973099</a></li>
+                          <li><a href=" nadhrasaed985@gmail.com<"><i class="fas fa-envelope"></i>&nbsp; nadhrasaed985@gmail.com</a></li>
+                             <li><a href="tel:+255773307372"><i class="fas fa-phone"></i>+255773307372</a></li>
+                             <li><a href=" asyasalim4@gmail.com<"><i class="fas fa-envelope"></i>&nbsp; syasalim4@gmail.com</a></li>
+                                 <li><a href="tel:+255774828306"><i class="fas fa-phone"></i> +255774828306</a></li>
+                                 <li><a href="mailto:Saadavuai5@gmail.com"><i class="fas fa-envelope"></i>&nbsp; Saadavuai5@gmail.com</a></li>
+
+
+                          
+                        
+                         
+                    </ul>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="d-block"><i style="color: #F77737; font-size: 25px;" class="fab fa-instagram"></i>
+                    &nbsp; Instagram</a>
+                    <a href="#" class="d-block"><i style="color: #000000;  font-size: 25px;"  class="fas fa-x"></i>
+                    &nbsp; Twitter</a>
+                    <a href="#" class="d-block"><i style="color: #1877F2;  font-size: 25px;"  class="fab fa-facebook-f"></i>
+                    &nbsp; Facebook</a>
+                    <a href="#" class="d-block"><i style="color: #FF0000;  font-size: 25px;"  class="fab fa-youtube"></i>
+                    &nbsp; YouTube</a>
+                </div>
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="About.html">About Us</a></li>
+                        <li><a href="Product.html">Product</a></li>
+                        <li><a href="contact.html">contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <center>
+            <p style="color: #FFFF00; font-weight: bold;" class="copyright">
+              &copy; 2024 Mobile Phone Shop. All rights reserved.<p style="color:#FFFF00">Designed by BBIT Students Of Zanzibar University</p>
+
+            </p>
+            </center>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
